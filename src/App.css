@@ -3,7 +3,7 @@
   width: 100%;
 }
 
-.App > ul > li {
+.App > ul > li{
   float: left;
   padding: 10px;
   list-style-type: none;
@@ -38,3 +38,5 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+

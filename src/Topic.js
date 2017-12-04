@@ -7,4 +7,4 @@ function Topic(props){
 	)
 }
 
-export default Topic;
+export default Topic
