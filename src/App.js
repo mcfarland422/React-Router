@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import About from './About';
 import Home from './Home';
 import Topics from './Topics';
+import Movies from './Movies';
 
 class App extends Component {
   render() {
@@ -20,14 +21,16 @@ class App extends Component {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/topics">Topics</Link></li>
+          <li><Link to="/movies">Movies</Link></li>
 
           {/*If you ONLY want to match the exact path, use exact*/}
           <Route exact path="/" render={() => (
             <Home title="Home Page" teams={['Pats','Vikings','Falcons']} />
           )}/>
           {/*<Route exact path="/" component={Home} />   */}
-          <Route path="/about" component={About} />   
+          <Route path="/about" component={About} />
           <Route path="/topics" component={Topics} />
+          <Route path="/movies" component={Movies} />
 
         </div>
       </Router>
